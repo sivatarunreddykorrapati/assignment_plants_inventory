@@ -1,0 +1,50 @@
+.row {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.column {
+	display: flex;
+	justify-content: center;
+	min-height: 300px;
+}
+
+.research-data {
+	text-align: center;
+}
+
+.research-data .title {
+	padding: 10px;
+	margin: 20px;
+	font-weight: 900 !important;
+}
+
+p {
+	hyphens: manual;
+	color: black;
+	overflow-wrap: break-word;
+	padding: 10px;
+}
+
+p::first-letter {
+	text-transform: capitalize;
+	font-size: 1.75rem;
+}
+
+@media screen and (max-width: 800px) {
+	.row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0%;
+	}
+
+	.chart-div {
+		width: 350px;
+		height: 200px;
+	}
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title></title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/home.js"></script>
+    <script src="js/country.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Template Main CSS File -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bodyContainer.css">
+    <link href="css/addplant.css" rel="stylesheet">
+    
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="home.html"> Plants Inventory </a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="addplant.html">Add a Plant</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="home.html#gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="analytics.html">Research data</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <form id="formId">
+    <div class="container add-plant-container">
+          <h1>Add a Plant to the Inventory</h1>
+              <div class="form">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="fname">Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="plantname" name="name" placeholder="Name of the plant.." required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="lname">Country</label>
+                  </div>
+                  <div class="col-75">
+                    <select class="form-control" id="countrySelect">
+                      <option value="" selected disabled>Select Country of Origin</option>
+                  </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="lname">Available</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="number" id="count" name="availablecount" placeholder="Count of plant.." required>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-25">
+                    <label for="subject">Uses</label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="uses" name="subject" placeholder="Uses of the plant.." style="height:200px"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <input class="saveOrEdit btn-success" type="submit" value="SAVE" onclick="validateForm()"/>
+                  <input class="btn-danger" type="reset" value="RESET" onclick="resetValues()"/>
+                </div>
+              </div>
+        </div>
+        </form>
+        <div class="table-container">
+          <table>
+            <thead class="alert-info">
+              <tr>
+                <th>PlantName</th>
+                <th>Country</th>
+                <th>Available?</th>
+                <th>Uses</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id= "result"></tbody>
+          </table>
+        </div>
+        <script src="js/addplant.js"></script>
+        </body>
+        </html>
+            
+        </div>
+        
+        </body>
+        </html>
+      
+          
+
+</body>
+</html>
+</head>
